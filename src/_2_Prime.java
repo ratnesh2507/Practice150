@@ -30,11 +30,12 @@ public class _2_Prime {
                 fact++;
             }
         }
-        if (fact > 2) {
-            return true;
-        } else {
-            return false;
-        }
+//        if (fact == 2) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+        return fact==2;
     }
 }
 
