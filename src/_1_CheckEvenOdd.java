@@ -12,11 +12,18 @@ Explanation: Since 4 is divisible by 2, it is an even number.
 
 import java.util.Scanner;
 
-public class _1_EvenOdd {
+public class _1_CheckEvenOdd {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        if(num%2 == 0) System.out.println("Even");
-        else System.out.println("Odd");
+        if(Even(num)){
+            System.out.println("Even");
+        }else{
+            System.out.println("Odd");
+        }
+    }
+    public static boolean Even(int n){
+        if(n%2 == 0) return true;
+        else return false;
     }
 }

@@ -17,6 +17,13 @@ public class _2_Prime {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
+        if(isPrime(num)){
+            System.out.println("Prime");
+        }else{
+            System.out.println("Not a Prime");
+        }
+    }
+    public static boolean isPrime(int num){
         int fact = 1;
         for (int i = 2; i <= num; i++) {
             if (num % i == 0) {
@@ -24,9 +31,9 @@ public class _2_Prime {
             }
         }
         if (fact > 2) {
-            System.out.println("Not a prime");
+            return true;
         } else {
-            System.out.println("Prime");
+            return false;
         }
     }
 }
