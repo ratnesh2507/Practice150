@@ -23,16 +23,16 @@ public class _20_PerfectNumber {
         }
     }
     public static boolean isPerfect(int num){
-        int sum = 1;
-        for(int i=2;i*i<=num;i++){
-            if(num%i==0){
-                if(i*i<=num){
-                    sum += i + num/i;
-                }else{
-                    sum += i;
+        if (num <= 1) return false; // Perfect numbers are greater than 1
+        int sum = 1; // Start with 1
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                sum += i; // Add the divisor
+                if (i != num / i) { // Ensure we don't add the square root twice
+                    sum += num / i; // Add the corres divisor
                 }
             }
         }
-        return sum == num && num != 1;
+        return sum == num; // Check if sum of divisors equals the number
     }
 }
