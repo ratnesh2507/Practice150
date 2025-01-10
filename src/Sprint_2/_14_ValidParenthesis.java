@@ -22,7 +22,7 @@ public class _14_ValidParenthesis {
         System.out.println(isValid(str));
     }
     public static boolean isValid(String s) {
-        Stack<Character> stack = new Stack<Character>();
+        Stack<Character> stack = new Stack<>();
         for (char c : s.toCharArray()) {
             if (c == '(' || c == '[' || c == '{') {
                 stack.push(c);
