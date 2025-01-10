@@ -15,12 +15,17 @@ public class _35_SumOfPrimeNums {
         Scanner sc = new Scanner(System.in);
         int start = sc.nextInt();
         int end = sc.nextInt();
+        int sum = sumOfPrimes(start, end);
+        System.out.println(sum);
+    }
+
+    public static int sumOfPrimes(int start, int end) {
         int sum =0;
-        for(int i=start;i<=end;i++){
+        for(int i = start; i<= end; i++){
             if(_2_Prime.isPrime(i)){
                 sum += i;
             }
         }
-        System.out.println(sum);
+        return sum;
     }
 }
