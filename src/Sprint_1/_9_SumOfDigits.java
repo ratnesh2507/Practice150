@@ -16,15 +16,15 @@ public class _9_SumOfDigits {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-        SumOfDigits(num);
+        System.out.println((SumOfDigits(num)));
     }
-    public static void SumOfDigits(int n){
+    public static int SumOfDigits(int n){
         int sum=0,rem=0;
         while(n>0){
             rem = n%10;
             sum += rem;
             n /= 10;
         }
-        System.out.println(sum);
+        return sum;
     }
 }
