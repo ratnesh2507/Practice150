@@ -17,7 +17,11 @@ public class _19_PrimeNumsInRange {
         Scanner sc = new Scanner(System.in);
         int start = sc.nextInt();
         int end = sc.nextInt();
-        for(int i=start;i<=end;i++){
+        primesInRange(start, end);
+    }
+
+    public static void primesInRange(int start, int end) {
+        for(int i = start; i<= end; i++){
             if(_2_Prime.isPrime(i)){
                 System.out.print(i+" ");
             }
