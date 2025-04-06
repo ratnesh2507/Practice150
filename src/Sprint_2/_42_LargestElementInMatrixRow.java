@@ -20,7 +20,7 @@ public class _42_LargestElementInMatrixRow {
                 mat[i][j] = sc.nextInt();
             }
         }
-        int[] ans = largestElementInEachRow(mat,size);
+        int[] ans = largestElementInEachRow(mat);
         for(int num : ans){
             System.out.print(num + " ");
         }
