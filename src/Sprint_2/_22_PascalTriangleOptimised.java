@@ -30,7 +30,10 @@ public class _22_PascalTriangleOptimised {
             ans.add(generateRow(i));
         }
         for(List<Integer> row : ans){
-            System.out.println(row);
+            for (Integer num : row) {
+                System.out.print(num);
+            }
+            System.out.println();
         }
     }
     public static List<Integer> generateRow(int row){
